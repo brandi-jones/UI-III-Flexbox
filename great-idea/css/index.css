@@ -22,7 +22,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
-	border: 1px solid grey; 
+	/*border: 1px solid grey; */
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -246,42 +246,48 @@ is different for the services page vs index page*/
 	display: flex;
 	justify-content: space-evenly;
 	flex-wrap: wrap;
-	align-items: center;
-	align-content: center;
+	margin: 0 -5% 0 -5%;
 }
 
 
 .services-grid-content div{
 
-	border: 1px solid red;
-	background-color: grey;
+	border: 1px solid black;
+	background-color: #dedede;
 	width: 40%;
 	height: 30vh;
 
-	margin: 2%;
-	padding: 15px;
+	margin: 1% 5% 1% 5%;
+	padding: 1%;
 }
 
+.button {
+	border: 2px solid grey;
+	background-color: white;
+	border-radius: 10px;
+	padding: 2% 8% 2% 8%;
+	margin: 3% 0 3% 0;
+}
 
+.button:hover {
+	animation-name: animation-button;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes animation-button {
+	from {background-color: white;}
+	to {background-color: #bdf1f6;}
+}
 
 
 /*second main content - facts*/
 .facts {
 	display: flex;	
 	justify-content: space-between;
+	border-top: 2px solid grey;
+	margin-top: 2%;
 }
-
-.facts div {
-	/*display:flex;
-	flex-direction: column;*/
-	/*padding: 5px;
-	height: 270px;
-	width: 400px;
-	margin: 5px;*/
-	border: 1px solid blue;
-}
-
-
 
 
 li {
@@ -299,5 +305,6 @@ li {
 	width: 50%;
 	margin: 3% 0 0 25%;
 }
+
 
 
