@@ -241,6 +241,10 @@ is different for the services page vs index page*/
 }
 
 
+/*Couldn't set up nav media query to work properly. Set width worked,
+but would only adjust for screen size after you hovered over the options.*/
+
+
 /*main content*/
 .services-grid-content {
 	display: flex;
@@ -280,6 +284,17 @@ is different for the services page vs index page*/
 	to {background-color: #bdf1f6;}
 }
 
+/*media query to create mobile view that stacks content on top of each other*/
+@media only screen and (max-width: 768px) {
+	/* For mobile phones: */
+	
+	.services-grid-content div {
+		width: 100%;
+	}
+  
+}
+
+
 
 /*second main content - facts*/
 .facts {
@@ -307,4 +322,19 @@ li {
 }
 
 
-
+/*media query to create mobile view that stacks content on top of each other*/
+@media only screen and (max-width: 768px) {
+	/* For mobile phones: */
+	
+	.facts {
+		flex-direction: column;
+	}
+	.facts div{
+		width: 100%;
+	}
+	.facts-img {
+		width: 50%;
+		margin: 0 -10% 0 0;
+	}
+  
+}
