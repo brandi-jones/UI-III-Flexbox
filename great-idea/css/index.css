@@ -22,7 +22,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
-	/*border: 1px solid grey; */
+	border: 1px solid grey; 
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -219,14 +219,85 @@ footer {
 
 /*Start code for services page*/
 
+
+/*Header*/
+
+/*accessing the header directly for the services page, since height
+is different for the services page vs index page*/
 .services-header {
 	display: flex;
 	flex-direction: column;
 	width: 100%;
-	height: 50%;
+	height: 55%;
 
 }
 
 .services-servicesPage {
 	margin-top: 2%;
 }
+
+.services-servicesPage h1 {
+	font-size: 25px;
+}
+
+
+/*main content*/
+.services-grid-content {
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	align-items: center;
+	align-content: center;
+}
+
+
+.services-grid-content div{
+
+	border: 1px solid red;
+	background-color: grey;
+	width: 40%;
+	height: 30vh;
+
+	margin: 2%;
+	padding: 15px;
+}
+
+
+
+
+/*second main content - facts*/
+.facts {
+	display: flex;	
+	justify-content: space-between;
+}
+
+.facts div {
+	/*display:flex;
+	flex-direction: column;*/
+	/*padding: 5px;
+	height: 270px;
+	width: 400px;
+	margin: 5px;*/
+	border: 1px solid blue;
+}
+
+
+
+
+li {
+	list-style: square inside;
+	line-height: 30px;
+	margin: 3% 0 0 0;
+}
+
+.facts-text {
+	width: 50%;
+	margin: 3% 0 0 0;
+}
+
+.facts-img {
+	width: 50%;
+	margin: 3% 0 0 25%;
+}
+
+
